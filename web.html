@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #0077cc; color: white; padding: 15px; text-align: center; }
+    nav a { margin: 0 10px; color: white; text-decoration: none; }
+    section { padding: 20px; margin: 10px; background: white; border-radius: 5px; }
+    .skills span { display: inline-block; background: #0077cc; color: white; padding: 5px 10px; margin: 5px; border-radius: 3px; }
+    .project { border: 1px solid #ddd; padding: 10px; margin: 10px 0; border-radius: 5px; }
+    form input, form textarea { width: 100%; padding: 8px; margin: 5px 0; }
+    button { padding: 10px 15px; background: #0077cc; color: white; border: none; cursor: pointer; }
+    button:hover { background: #005fa3; }
+    .dark { background: #222; color: white; }
+    .dark header { background: #111; }
+    .dark section { background: #333; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Somanshu Vyas</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button onclick="toggleDarkMode()">Dark Mode</button>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! My name is <strong>Somanshu Vyas</strong> and I'm a first-year student from SRMIST KTR CHENNAI of branch CSE w/s IT, who is passionate about tech and web development. I enjoy learning new skills and building simple projects that solve real problems. I am currently improving my knowledge in HTML and excited to grow as a developer by working on team projects and learning from others, learn industry skills, and collaborate with people who share similar interests. I am hardworking, eager to learn, and always open to feedback.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>HTML Basics</span>
+      <span>C</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>A simple <strong>Personal Portfolio Website I built using basics of HTML.</p>
+    </div>
+   </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:somanshuvyas@gmail.com">somanshuvyas@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919244901214">+919244901214</a></p> 
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
